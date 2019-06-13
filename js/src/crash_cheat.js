@@ -8,7 +8,7 @@ document.addEventListener('visibilitychange',function(){
     clearTimeout(标题时间);
   }
   else {
-    $('[rel =“icon”]').attr('href',"/ favicon.ico”);
+    $('[rel =“icon”]').attr('href',"/ favicon.ico") ;
       document.title ='（ฅ>ω<*ฅ）噫又好了〜'+ OriginTitle;
     titleTime = setTimeout(function(){
       document.title = OriginTitle;
