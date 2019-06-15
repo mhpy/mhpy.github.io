@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2Funcategorized%2F404%2F</url>
+    <content type="text"><![CDATA[L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":400,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"react":{"opacityDefault":0.5,"opacityOnHover":0}},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[hello-4]]></title>
     <url>%2F455%2F456%2Fhello-4%2F</url>
     <content type="text"></content>
