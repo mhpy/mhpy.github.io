@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2Funcategorized%2F404%2F</url>
-    <content type="text"><![CDATA[L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":400,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"react":{"opacityDefault":0.5,"opacityOnHover":0}},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});]]></content>
+    <title><![CDATA[debug]]></title>
+    <url>%2Funcategorized%2Fdebug%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[next]]></title>
+    <url>%2Funcategorized%2Fnext%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[next]]></title>
+    <url>%2Funcategorized%2Fnext%2F</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[hello-4]]></title>
@@ -19,8 +29,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[hell03]]></title>
-    <url>%2F456%2Fhell03%2F</url>
+    <title><![CDATA[hello-3]]></title>
+    <url>%2F456%2Fhello-3%2F</url>
     <content type="text"></content>
       <categories>
         <category>456</category>
@@ -30,25 +40,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[hello 2]]></title>
-    <url>%2F456%2Fhello-2%2F</url>
-    <content type="text"><![CDATA[号地块萨芬别的覅我会话层可敬的苦涩不超过开会ce比较合适顶半个月好吃附近基础上吃饭价格都赶紧g 凉砍价d刚回家HIWGDXDYBEGHDHJGXD路反映出f 发的四叶草 崔人才删除 吃的是认识一会 是路fl iOSURL是]]></content>
-      <categories>
-        <category>456</category>
-      </categories>
+    <title><![CDATA[超详细Hexo+Github搭建技术博客教程【持续更新】]]></title>
+    <url>%2Funcategorized%2F%E8%B6%85%E8%AF%A6%E7%BB%86Hexo%2BGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[前言菜鸟搭建的一个博客，作为学习使用，请大家不要乱喷哦，谢谢！ 准备环境准备 node 和 git 环境，首先，安装 NodeJS，因为 Hexo 是基于 Node.js 驱动的一款博客框架，相比起前面提到过的 Jekyll 框架更快更简洁。然后，安装 git，一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。如果 Git 还不熟悉可以参考廖雪峰大神的 Git 教程。 两个工具不同的平台安装方法有所不一样，可自行了解按步骤安装，这里不详述了。安装成功后打开git bash（Windowns）或者终端（Mac），下方中将统一称为命令行。在命令行中输入相应命令验证是否成功，如果成功会有相应的版本号。 123git versionnode -vnpm -v 安装Hexo如果以上环境准备好了就可以使用 npm 开始安装 Hexo 了。也可查看 Hexo 的详细文档。在命令行输入执行以下命令： 1npm install -g hexo-cli 安装 Hexo 完成后，再执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件 123hexo init myBlogcd myBlognpm install 新建后，指定文件夹的目录如下 12345678.├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 ├── package.json├── scaffolds # 模版文件夹├── source # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹| ├── _drafts # 草稿文件| └── _posts # 文章Markdowm文件 └── themes # 主题文件夹 好了，如果上面的命令都没报错的话，就恭喜完成了，运行 hexo s 命令，其中 s 是 server 的缩写，在浏览器中输入 http://localhost:4000 回车就可以预览效果了。]]></content>
       <tags>
-        <tag>123</tag>
+        <tag>Hexo Github</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World 1]]></title>
-    <url>%2F456%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[123Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Download Now Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <categories>
-        <category>456</category>
-      </categories>
-      <tags>
-        <tag>123</tag>
-      </tags>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Funcategorized%2Fhello-1%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Download Now Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
