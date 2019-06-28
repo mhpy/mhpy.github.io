@@ -29,7 +29,7 @@
   <entry>
     <title><![CDATA[Hexo NexT主题优化之路-持续更新]]></title>
     <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%B9%8B%E8%B7%AF-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%2F</url>
-    <content type="text"><![CDATA[选择了Hexo + Next完成个人博客建站，本文将陆续记录本站采用过的优化措施，供大家参考。 主题内容区宽度默认的宽度有点窄，可以在source/css/_schemes/Picses/_layout.styl文件末尾添加如下代码: 12345678910111213141516171819202122232425262728293031323334/*扩展宽度*/header&#123; width: 80% !important; &#125;header.post-header &#123; width: auto !important;&#125;.container .main-inner &#123; width: 80%; &#125;.content-wrap &#123; width: calc(100% - 260px); &#125;.header &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.container .main-inner &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.content-wrap &#123; +tablet() &#123; width: 100% !important; &#125; +mobile() &#123; width: 100% !important; &#125;&#125;]]></content>
+    <content type="text"><![CDATA[选择了Hexo + Next完成个人博客建站，本文将陆续记录本站采用过的优化措施，供大家参考。 主题内容区宽度_layout.styl默认的宽度有点窄，可以在source/css/_schemes/Picses/_layout.styl文件末尾添加如下代码: 12345678910111213141516171819202122232425262728293031323334/*扩展宽度*/header&#123; width: 80% !important; &#125;header.post-header &#123; width: auto !important;&#125;.container .main-inner &#123; width: 80%; &#125;.content-wrap &#123; width: calc(100% - 260px); &#125;.header &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.container .main-inner &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.content-wrap &#123; +tablet() &#123; width: 100% !important; &#125; +mobile() &#123; width: 100% !important; &#125;&#125; 主题动态背景动态线条背景吃内存不建议使用 _layout.swig找到themes\next\layout_layout.swig文件，添加内容：在里添加：L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":130,"height":280,"position":"left","hOffset":10,"vOffset":20},"mobile":{"show":true,"react":{"opacityDefault":0.5,"opacityOnHover":0}},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false}); 123&lt;div class =“bg_content”&gt; &lt;canvas id =“canvas”&gt; &lt;/ canvas&gt;&lt;/div&gt; 在末尾添加： 1&lt;script type =“text / javascript”src =“/ js / src / dynamic_bg.js”&gt; &lt;/ script&gt; dynamic_bg.js在themes\next\source\js\src中新建文件dynamic_bg.js，代码链接中可见：dynamic_bg.js custom.styl在themes\next\source\css_custom\custom.styl文件末尾添加内容： 1234567.bg_content &#123; 位置：固定; 顶部：0; z-index：-1; 宽度：100％; 身高：100％;&#125;]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
@@ -59,7 +59,7 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>NexT</tag>
+        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -71,7 +71,7 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>NexT</tag>
+        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -83,7 +83,7 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>NexT</tag>
+        <tag>Next</tag>
         <tag>DaoVoice</tag>
       </tags>
   </entry>
