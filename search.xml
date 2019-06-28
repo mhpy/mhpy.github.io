@@ -1,58 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[debug]]></title>
-    <url>%2Funcategorized%2Fdebug%2F</url>
+    <title><![CDATA[678]]></title>
+    <url>%2Funcategorized%2F678%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[next]]></title>
-    <url>%2Funcategorized%2Fnext%2F</url>
+    <title><![CDATA[234]]></title>
+    <url>%2Funcategorized%2F234%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[next]]></title>
-    <url>%2Funcategorized%2Fnext%2F</url>
+    <title><![CDATA[0]]></title>
+    <url>%2Funcategorized%2F0%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[hello-4]]></title>
-    <url>%2F455%2F456%2Fhello-4%2F</url>
+    <title><![CDATA[Java8新特性]]></title>
+    <url>%2FJava%2FJava8%E6%96%B0%E7%89%B9%E6%80%A7%2F</url>
     <content type="text"></content>
       <categories>
-        <category>455</category>
-        <category>456</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>121</tag>
-        <tag>122</tag>
+        <tag>Java8</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[hello-3]]></title>
-    <url>%2F456%2Fhello-3%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>456</category>
-      </categories>
-      <tags>
-        <tag>123</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[超详细Hexo+Github搭建技术博客教程【持续更新】]]></title>
-    <url>%2FHexo%2F%E8%B6%85%E8%AF%A6%E7%BB%86Hexo%2BGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[前言 菜鸟搭建的一个博客，作为学习使用，请大家不要乱喷哦，谢谢！ 准备环境 准备 node 和 git 环境，首先，安装 NodeJS，因为 Hexo 是基于 Node.js 驱动的一款博客框架，相比起前面提到过的 Jekyll 框架更快更简洁。然后，安装 git，一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。如果 Git 还不熟悉可以参考廖雪峰大神的 Git 教程。两个工具不同的平台安装方法有所不一样，可自行了解按步骤安装，这里不详述了。安装成功后打开git bash（Windowns）或者终端（Mac），下方中将统一称为命令行。在命令行中输入相应命令验证是否成功，如果成功会有相应的版本号。 123git versionnode -vnpm -v 安装Hexo如果以上环境准备好了就可以使用 npm 开始安装 Hexo 了。也可查看 Hexo 的详细文档。在命令行输入执行以下命令： 1npm install -g hexo-cli 安装 Hexo 完成后，再执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件 123hexo init myBlogcd myBlognpm install 新建后，指定文件夹的目录如下 12345678.├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 ├── package.json├── scaffolds # 模版文件夹├── source # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹| ├── _drafts # 草稿文件| └── _posts # 文章Markdowm文件 └── themes # 主题文件夹 好了，如果上面的命令都没报错的话，就恭喜完成了，运行 hexo s( 或者 hexo s –debug) 命令，其中 s 是 server 的缩写，在浏览器中输入 http://localhost:4000 回车就可以预览效果了。 1hexo s 以下是我本地的预览效果，更换了 next 主题的，默认不是这个主题。 至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。 注册 Github如果你还没有 Github 账号就注册一个，具体过程如下点击 Start project 或者下面的 new repository 创建一个新的仓库注意点来了，Github 仅能使用一个同名仓库的代码托管一个静态站点，这个网上很多教程没说到的。然后打开仓库创建一个 index.html 文件，并随意先写点内容，比如 Hello World.这个时候打开 http://你的用户名.github.io 就可以看到你的站点啦！index.html 内容只是暂时的预览效果，后面把 Hexo 的文件部署上去就可以在 http://你的用户名.github.io 看到你自己的博客！ 比如我的就是 http://mhpy.github.io 了。 配置 SSH key要使用 git 工具首先要配置一下SSH key，为部署本地博客到 Github 做准备。 打开命令行输入 cd ~/.ssh 如果没报错或者提示什么的说明就是以前生成过的，直接使用 cat ~/.ssh/id_rsa.pub 命令就是可以查看本机上的 SSH key 了。 1cat ~/.ssh/id_rsa.pub 如果之前没有创建，则执行以下命令全局配置一下本地账户： 12git config --global user.name &quot;用户名&quot;git config --global user.email &quot;邮箱地址&quot; 然后开始生成密钥 SSH key 1ssh-keygen -t rsa -C &apos;上面的邮箱&apos; 按照提示完成三次回车，即可生成 ssh key。通过查看 ~/.ssh/id_rsa.pub 文件内容，获取到你的 SSH key 首次使用还需要确认并添加主机到本机SSH可信列表。若返回 Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access. 内容，则证明添加成功。 1ssh -T git@github.com 到这还没完，还要登录 Github 上添加刚刚生成的SSH key，按以下步骤添加 创建一个新的 SSH key, 标题随便，key 就填刚才生成那个，确认创建，搞定！！这样在你的 SSH keys 列表里就会看到你刚刚添加的密钥。 部署到 Github本地和Github的工作做得差不了，是时候把它们两个连接起来了。你可以查看官网的部署教程。部署之前还需要修改配置和安装部署插件。第一：打开项目根目录下的 _config.yml 配置文件配置参数： 第二：要安装一个部署插件 hexo-deployer-git。 1npm install hexo-deployer-git --save 最后执行以下命令就可以部署上传啦，以下 g 是 generate 缩写，d 是 deploy 缩写： 1hexo g -d 稍等一会，在浏览器访问网址： https://你的用户名.github.io就会看到你的博客啦！！]]></content>
+    <title><![CDATA[Hexo NexT主题优化之路-持续更新]]></title>
+    <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%B9%8B%E8%B7%AF-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%2F</url>
+    <content type="text"><![CDATA[选择了Hexo + Next完成个人博客建站，本文将陆续记录本站采用过的优化措施，供大家参考。 主题内容区宽度默认的宽度有点窄，可以在source/css/_schemes/Picses/_layout.styl文件末尾添加如下代码: 12345678910111213141516171819202122232425262728293031323334/*扩展宽度*/header&#123; width: 80% !important; &#125;header.post-header &#123; width: auto !important;&#125;.container .main-inner &#123; width: 80%; &#125;.content-wrap &#123; width: calc(100% - 260px); &#125;.header &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.container .main-inner &#123; +tablet() &#123; width: auto !important; &#125; +mobile() &#123; width: auto !important; &#125;&#125;.content-wrap &#123; +tablet() &#123; width: 100% !important; &#125; +mobile() &#123; width: 100% !important; &#125;&#125;]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo Github</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题内给每篇文章后添加结束标语]]></title>
+    <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E5%86%85%E7%BB%99%E6%AF%8F%E7%AF%87%E6%96%87%E7%AB%A0%E5%90%8E%E6%B7%BB%E5%8A%A0%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AF%AD%2F</url>
+    <content type="text"><![CDATA[NexT主题内给每篇文章后添加结束标语 新建文件在\themes\next\layout_macro中新建passage-end-tag.swig文件，添加代码至该文件中： 12345&lt;div&gt; &#123;% if not is_index %&#125; &lt;div style=&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class=&quot;fa fa-paw&quot;&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt; &#123;% endif %&#125;&lt;/div&gt; 修改post.swig打开\themes\next\layout_macro\post.swig文件，在post-body后，post-footer前，添加下面内容： 12345&lt;div&gt; &#123;% if not is_index %&#125; &#123;% include &apos;passage-end-tag.swig&apos; %&#125; &#123;% endif %&#125;&lt;/div&gt; 修改_config打开主题配置文件（_config.yml),在末尾添加： 123# 文章末尾添加“本文结束”标记passage_end_tag: enabled: true 完成了关于添加文章结束标语的功能,赶紧试一试吧！]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题添加点击爱心效果]]></title>
+    <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E7%88%B1%E5%BF%83%E6%95%88%E6%9E%9C%2F</url>
+    <content type="text"><![CDATA[NexT主题内添加页面点击出现爱心的效果 创建js文件在/themes/next/source/js/src下新建文件clicklove.js，接着把该链接下的代码拷贝粘贴到clicklove.js文件中。代码如下： 1!function(e,t,a)&#123;function n()&#123;c(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &apos;&apos;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;),o(),r()&#125;function r()&#123;for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=&quot;left:&quot;+d[e].x+&quot;px;top:&quot;+d[e].y+&quot;px;opacity:&quot;+d[e].alpha+&quot;;transform:scale(&quot;+d[e].scale+&quot;,&quot;+d[e].scale+&quot;) rotate(45deg);background:&quot;+d[e].color+&quot;;z-index:99999&quot;);requestAnimationFrame(r)&#125;function o()&#123;var t=&quot;function&quot;==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e)&#123;t&amp;&amp;t(),i(e)&#125;&#125;function i(e)&#123;var a=t.createElement(&quot;div&quot;);a.className=&quot;heart&quot;,d.push(&#123;el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()&#125;),t.body.appendChild(a)&#125;function c(e)&#123;var a=t.createElement(&quot;style&quot;);a.type=&quot;text/css&quot;;try&#123;a.appendChild(t.createTextNode(e))&#125;catch(t)&#123;a.styleSheet.cssText=e&#125;t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)&#125;function s()&#123;return&quot;rgb(&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;)&quot;&#125;var d=[];e.requestAnimationFrame=function()&#123;return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e)&#123;setTimeout(e,1e3/60)&#125;&#125;(),n()&#125;(window,document); 修改_layout.swig在\themes\next\layout_layout.swig文件末尾添加： 12&lt;!-- 页面点击小红心 --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clicklove.js&quot;&gt;&lt;/script&gt;]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效]]></title>
+    <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98%E5%B4%A9%E6%BA%83%E6%AC%BA%E9%AA%97%E6%90%9E%E6%80%AA%E7%89%B9%E6%95%88%2F</url>
+    <content type="text"><![CDATA[给网页标题添加一些搞怪特效 crash_cheat.js在next\source\js\src文件夹数下创建³³ crash_cheat.js，添加代码： 1234567891011121314151617&lt;！ - 崩溃欺骗 - &gt; var OriginTitle = document.title; var titleTime; document.addEventListener（&apos;visibilitychange&apos;，function（）&#123; if（document.hidden）&#123; $（&apos;[rel =“icon”]&apos;）。attr（&apos;href&apos;，“/ img / TEP.ico”）; document.title =&apos;╭（°A°`）╮页面崩溃啦〜&apos;; clearTimeout（标题时间）; &#125; 其他&#123; $（&apos;[rel =“icon”]&apos;）。attr（&apos;href&apos;，“/ favicon.ico”）; document.title =&apos;（ฅ&gt;ω&lt;*ฅ）噫又好了〜&apos;+ OriginTitle; titleTime = setTimeout（function（）&#123; document.title = OriginTitle; &#125;，2000）; &#125; &#125;）; 引用在next\layout_layout.swig文件中，添加引用（注：在痛饮末尾添加）： 12&lt;！ - 崩溃欺骗 - &gt;&lt;script type =“text / javascript”src =“/ js / src / crash_cheat.js”&gt; &lt;/ script&gt;]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题内接入网页在线联系功能]]></title>
+    <url>%2FHexo%2FHexo%20NexT%E4%B8%BB%E9%A2%98%E5%86%85%E6%8E%A5%E5%85%A5%E7%BD%91%E9%A1%B5%E5%9C%A8%E7%BA%BF%E8%81%94%E7%B3%BB%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[Hexo NexT 主题内接入网页在线联系功能 注册首先在DaoVoice注册个账号，点击- &gt; 邀请码的英文 9b995e64 。 完成后，会得到一个app_id 修改head.swig修改/themes/next/layout/_partials/head.swig文件，添加内容如下，注意’//widget.daovoice.io/widget/9b995e64.js’中js文件名改成自己的id就行： 12345678910&lt;!-- 在线聊天 --&gt;&#123;% if theme.daovoice %&#125; &lt;script&gt; (function(i,s,o,g,r,a,m)&#123;i[&quot;DaoVoiceObject&quot;]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset=&quot;utf-8&quot;;m.parentNode.insertBefore(a,m)&#125;)(window,document,&quot;script&quot;,(&apos;https:&apos; == document.location.protocol ? &apos;https:&apos; : &apos;http:&apos;) + &quot;//widget.daovoice.io/widget/9b995e64.js&quot;,&quot;daovoice&quot;) daovoice(&apos;init&apos;, &#123; app_id: &quot;&#123;&#123;theme.daovoice_app_id&#125;&#125;&quot; &#125;); daovoice(&apos;update&apos;); &lt;/script&gt;&#123;% endif %&#125; 主题配置文件在_config.yml文件中添加内容： 123＃在线联系daovoice：是的daovoice_app_id：＃这里填你刚才获得的app_id 聊天窗口配置附上我的聊天窗口的颜色，位置等设置信息至此，网页的在线联系功能已经完成，重新hexo g，hexo d上传的GitHub后，页面上就能看到效果了。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>DaoVoice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[超详细Hexo+Github搭建技术博客教程【持续更新】]]></title>
+    <url>%2FHexo%2FHexo%2BGithub%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[Hexo+Github搭建技术博客教程 前言菜鸟搭建的一个博客，作为学习使用，请大家不要乱喷哦，谢谢！ 准备环境准备 node 和 git 环境，首先，安装 NodeJS，因为 Hexo 是基于 Node.js 驱动的一款博客框架，相比起前面提到过的 Jekyll 框架更快更简洁。然后，安装 git，一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。如果 Git 还不熟悉可以参考廖雪峰大神的 Git 教程。两个工具不同的平台安装方法有所不一样，可自行了解按步骤安装，这里不详述了。安装成功后打开git bash（Windowns）或者终端（Mac），下方中将统一称为命令行。在命令行中输入相应命令验证是否成功，如果成功会有相应的版本号。 123git versionnode -vnpm -v 安装Hexo如果以上环境准备好了就可以使用 npm 开始安装 Hexo 了。也可查看 Hexo 的详细文档。在命令行输入执行以下命令： 1npm install -g hexo-cli 安装 Hexo 完成后，再执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件 123hexo init myBlogcd myBlognpm install 新建后，指定文件夹的目录如下 12345678.├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 ├── package.json├── scaffolds # 模版文件夹├── source # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹| ├── _drafts # 草稿文件| └── _posts # 文章Markdowm文件 └── themes # 主题文件夹 好了，如果上面的命令都没报错的话，就恭喜完成了，运行 hexo s( 或者 hexo s –debug) 命令，其中 s 是 server 的缩写，在浏览器中输入 http://localhost:4000 回车就可以预览效果了。 1hexo s 以下是我本地的预览效果，更换了 next 主题的，默认不是这个主题。 至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。 注册 Github如果你还没有 Github 账号就注册一个，具体过程如下点击 Start project 或者下面的 new repository 创建一个新的仓库注意点来了，Github 仅能使用一个同名仓库的代码托管一个静态站点，这个网上很多教程没说到的。然后打开仓库创建一个 index.html 文件，并随意先写点内容，比如 Hello World.这个时候打开 http://你的用户名.github.io 就可以看到你的站点啦！index.html 内容只是暂时的预览效果，后面把 Hexo 的文件部署上去就可以在 http://你的用户名.github.io 看到你自己的博客！ 比如我的就是 http://mhpy.github.io 了。 配置 SSH key要使用 git 工具首先要配置一下SSH key，为部署本地博客到 Github 做准备。 打开命令行输入 cd ~/.ssh 如果没报错或者提示什么的说明就是以前生成过的，直接使用 cat ~/.ssh/id_rsa.pub 命令就是可以查看本机上的 SSH key 了。 1cat ~/.ssh/id_rsa.pub 如果之前没有创建，则执行以下命令全局配置一下本地账户： 12git config --global user.name &quot;用户名&quot;git config --global user.email &quot;邮箱地址&quot; 然后开始生成密钥 SSH key 1ssh-keygen -t rsa -C &apos;上面的邮箱&apos; 按照提示完成三次回车，即可生成 ssh key。通过查看 ~/.ssh/id_rsa.pub 文件内容，获取到你的 SSH key 首次使用还需要确认并添加主机到本机SSH可信列表。若返回 Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access. 内容，则证明添加成功。 1ssh -T git@github.com 到这还没完，还要登录 Github 上添加刚刚生成的SSH key，按以下步骤添加 创建一个新的 SSH key, 标题随便，key 就填刚才生成那个，确认创建，搞定！！这样在你的 SSH keys 列表里就会看到你刚刚添加的密钥。 部署到 Github本地和Github的工作做得差不了，是时候把它们两个连接起来了。你可以查看官网的部署教程。部署之前还需要修改配置和安装部署插件。第一：打开项目根目录下的 _config.yml 配置文件配置参数： 第二：要安装一个部署插件 hexo-deployer-git。 1npm install hexo-deployer-git --save 最后执行以下命令就可以部署上传啦，以下 g 是 generate 缩写，d 是 deploy 缩写： 1hexo g -d 稍等一会，在浏览器访问网址： https://你的用户名.github.io就会看到你的博客啦！！ 开始写作博客搭好了，就开始写文章了，这里简单介绍一下，详细的文档可以看 hexo 官网。新建文章，输入以下命令即可 1hexo new &apos;文章标题&apos; 执行完成后可以在 /source/_posts 下看到一个“文章标题.md”的文章文件啦。.md 就是 Markdown 格式的文件，具体用法可以在网上找一下，语法还是比较简单的。再执行一下以下命令 12hexo cleanhexo s 就可以看到你的文章在博客显示了，以下就是刚刚 最后，部署到 Github 上就可以了！ 12hexo cleanhexo g -d hexo clean 命令，清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果你的文章暂时不发布可以先保存在草稿里面。hexo new draft “文章标题”，生成后会在 /source/_drafts 里看到你的草稿文章。当你想发布时只要执行 publish 命令即可发布到博客。 1hexo publish [layout] &lt;filename&gt;]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2Funcategorized%2Fhello-1%2F</url>
+    <url>%2Funcategorized%2Fhello%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Download Now Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
