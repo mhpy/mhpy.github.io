@@ -6,14 +6,26 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[234]]></title>
-    <url>%2Funcategorized%2F234%2F</url>
+    <title><![CDATA[Docker-践行DevOps理念]]></title>
+    <url>%2FDocker%2FDocker-%E8%B7%B5%E8%A1%8CDevOps%E7%90%86%E5%BF%B5%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[0]]></title>
-    <url>%2Funcategorized%2F0%2F</url>
+    <title><![CDATA[mysql常用语法]]></title>
+    <url>%2Fsql%2FMySql%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>sql</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Java8新特性]]></title>

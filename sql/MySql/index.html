@@ -154,7 +154,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="mysql,">
 
 
 
@@ -166,15 +166,16 @@
 
 
 <meta name="description" content="千行代码，Bug何处藏。 纵使上线又怎样，朝令改，夕断肠。">
+<meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="0">
-<meta property="og:url" content="http://yoursite.com/uncategorized/0/index.html">
+<meta property="og:title" content="mysql常用语法">
+<meta property="og:url" content="http://yoursite.com/sql/MySql/index.html">
 <meta property="og:site_name" content="mhpy的主页">
 <meta property="og:description" content="千行代码，Bug何处藏。 纵使上线又怎样，朝令改，夕断肠。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-26T06:39:05.000Z">
+<meta property="og:updated_time" content="2019-07-02T05:31:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="0">
+<meta name="twitter:title" content="mysql常用语法">
 <meta name="twitter:description" content="千行代码，Bug何处藏。 纵使上线又怎样，朝令改，夕断肠。">
 
 
@@ -185,7 +186,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -205,7 +206,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/uncategorized/0/">
+  <link rel="canonical" href="http://yoursite.com/sql/MySql/">
 
 
 
@@ -221,7 +222,7 @@
 </script>
 
 
-  <title>0 | mhpy的主页</title>
+  <title>mysql常用语法 | mhpy的主页</title>
   
 
 
@@ -243,7 +244,7 @@
   <div class="bg_content"> <canvas id="canvas"></canvas> </div>
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
-        <a href="https://github.com/you"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <a href="https://github.com/mhpy/" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -337,16 +338,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
-            
-            站点地图
-          </a>
-        </li>
-      
 
       
         <li class="menu-item menu-item-search">
@@ -412,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/0/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/sql/MySql/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="mhpy">
@@ -429,7 +420,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">0</h1>
+          <h1 class="post-title" itemprop="name headline">mysql常用语法</h1>
         
 
         <div class="post-meta">
@@ -441,8 +432,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-26T14:39:05+08:00">
-                2019-06-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-15T14:39:05+08:00">
+                2019-06-15
               </time>
             
 
@@ -452,6 +443,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/sql/" itemprop="url" rel="index">
+                    <span itemprop="name">sql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -459,7 +472,7 @@
 
           
           
-             <span id="/uncategorized/0/" class="leancloud_visitors" data-flag-title="0">
+             <span id="/sql/MySql/" class="leancloud_visitors" data-flag-title="mysql常用语法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -552,7 +565,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/uncategorized/0/" title="0">http://yoursite.com/uncategorized/0/</a>
+    <a href="http://yoursite.com/sql/MySql/" title="mysql常用语法">http://yoursite.com/sql/MySql/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -564,6 +577,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mysql/" rel="tag"><i class="fa fa-tag"></i> mysql</a>
+          
+        </div>
       
 
       
@@ -584,8 +603,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/uncategorized/234/" rel="prev" title="234">
-                234 <i class="fa fa-chevron-right"></i>
+              <a href="/Docker/Docker-践行DevOps理念/" rel="prev" title="Docker-践行DevOps理念">
+                Docker-践行DevOps理念 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -676,6 +695,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -710,7 +731,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -721,7 +742,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -781,10 +802,10 @@
             </div>
           
 
-          <div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=38358214&auto=0&height=66">
+          <!-- <div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=38358214&auto=0&height=66">
     </iframe>
-</div>
+</div> -->
 
         </div>
       </section>
@@ -803,7 +824,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -813,15 +836,12 @@
 </div>
 
 
-
-
-
-
-
-
-
   <div class="powered-by">  个人专属</div>
 
+
+ <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人</span>
 
 
   <span class="post-meta-divider">|</span>
@@ -1368,7 +1388,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("<app_id>", "<app_key>");</script>
+  <script>AV.initialize("sWFyJG4leuicBIh6tQmf931A-gzGzoHsz", "G7iLliXquQvPGbSTHmn40cca");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
